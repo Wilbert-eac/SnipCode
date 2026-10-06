@@ -1,4 +1,4 @@
-# ⚡ SnipCode — Generador y Editor de Snippets de Código Estilizados
+# ⚡ PrintCode — Generador y Editor de Snippets de Código Estilizados
 
 <p align="center">
   <img src="https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React 19" />
@@ -41,7 +41,7 @@
 
 ### 👤 4. Branding & Tarjeta de Autor
 - Firma personalizable al pie con tu Nombre, `@usuario` (Twitter/GitHub) y avatar.
-- Insignia de estadísticas de código y marca de agua SnipCode.
+- Insignia de estadísticas de código y marca de agua PrintCode.
 
 ### ⚡ 5. Exportación Ultra Rápida
 - 📋 **Copiar Imagen al Portapapeles (PNG):** Pega directamente con `Ctrl+V` en redes sociales, Discord o Slack sin guardar archivos.
@@ -76,8 +76,8 @@
 
 1. **Clonar el repositorio:**
    ```bash
-   git clone https://github.com/TU_USUARIO/snipcode.git
-   cd snipcode
+   git clone https://github.com/TU_USUARIO/printcode.git
+   cd printcode
    ```
 
 2. **Instalar dependencias:**

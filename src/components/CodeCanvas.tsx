@@ -190,7 +190,7 @@ export const CodeCanvas: React.FC<CodeCanvasProps> = ({
           {/* THE EXPORTABLE ELEMENT */}
           <div
             ref={canvasRef}
-            id="snipcode-export-node"
+            id="printcode-export-node"
             className={`relative overflow-hidden transition-all duration-300 flex flex-col items-center justify-center ${getPatternClass()}`}
             style={{
               ...getBackgroundStyle(),
@@ -259,7 +259,7 @@ export const CodeCanvas: React.FC<CodeCanvasProps> = ({
                     {windowSettings.style === 'terminal' && (
                       <div className="flex items-center gap-1.5 text-xs font-mono text-emerald-400">
                         <Terminal className="h-3.5 w-3.5" />
-                        <span>bash ~ snipcode</span>
+                        <span>bash ~ printcode</span>
                       </div>
                     )}
                   </div>
@@ -389,7 +389,7 @@ export const CodeCanvas: React.FC<CodeCanvasProps> = ({
                       onChange={(e) => onCodeChange(e.target.value)}
                       onKeyDown={handleKeyDown}
                       spellCheck={false}
-                      className="snipcode-editor absolute inset-0 w-full h-full bg-transparent text-transparent caret-white outline-none resize-none overflow-hidden m-0 p-0 whitespace-pre"
+                      className="printcode-editor absolute inset-0 w-full h-full bg-transparent text-transparent caret-white outline-none resize-none overflow-hidden m-0 p-0 whitespace-pre"
                       style={{
                         fontFamily: resolvedFontFamily,
                         fontSize: `${codeSettings.fontSize}px`,
@@ -453,7 +453,7 @@ export const CodeCanvas: React.FC<CodeCanvasProps> = ({
                       {authorSettings.name || 'Desarrollador'}
                     </div>
                     <div className="text-[10px] font-mono text-indigo-300">
-                      {authorSettings.handle || '@snipcode'}
+                      {authorSettings.handle || '@printcode'}
                     </div>
                   </div>
                 </div>
@@ -462,7 +462,7 @@ export const CodeCanvas: React.FC<CodeCanvasProps> = ({
                 {authorSettings.showWatermark && (
                   <div className="flex items-center gap-1.5 text-[10px] font-bold text-slate-400 bg-white/5 px-2.5 py-1 rounded-full border border-white/10">
                     <Sparkles className="h-3 w-3 text-pink-400" />
-                    <span>SnipCode</span>
+                    <span>PrintCode</span>
                   </div>
                 )}
               </div>

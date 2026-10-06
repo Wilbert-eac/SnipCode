@@ -31,7 +31,7 @@ export const Navbar: React.FC<NavbarProps> = ({
           <div className="flex flex-col">
             <div className="flex items-center gap-2">
               <span className="text-xl font-extrabold tracking-tight bg-gradient-to-r from-white via-indigo-100 to-indigo-300 bg-clip-text text-transparent">
-                SnipCode
+                PrintCode
               </span>
             </div>
             <p className="text-[11px] text-slate-400 font-medium hidden sm:block">

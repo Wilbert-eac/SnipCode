@@ -205,8 +205,8 @@ matrix.on('singularity', (event) => {
       },
       authorSettings: {
         show: true,
-        name: 'SnipCode Studio',
-        handle: '@snipcode',
+        name: 'PrintCode Studio',
+        handle: '@printcode',
         avatarUrl: '',
         showWatermark: true
       }

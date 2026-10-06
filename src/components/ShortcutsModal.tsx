@@ -30,7 +30,7 @@ export const ShortcutsModal: React.FC<ShortcutsModalProps> = ({ isOpen, onClose 
               <Keyboard className="h-5 w-5" />
             </div>
             <div>
-              <h3 className="text-base font-bold text-white">Atajos de Teclado SnipCode</h3>
+              <h3 className="text-base font-bold text-white">Atajos de Teclado PrintCode</h3>
               <p className="text-xs text-slate-400">Agiliza tu flujo de trabajo de creación</p>
             </div>
           </div>

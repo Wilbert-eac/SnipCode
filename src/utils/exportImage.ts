@@ -16,7 +16,7 @@ export function fireCelebrationConfetti() {
 }
 
 export async function exportToPng(element: HTMLElement, options: ExportOptions = {}): Promise<void> {
-  const { scale = 2, filename = 'snipcode-snippet.png' } = options;
+  const { scale = 2, filename = 'printcode-snippet.png' } = options;
 
   try {
     const dataUrl = await htmlToImage.toPng(element, {
@@ -38,7 +38,7 @@ export async function exportToPng(element: HTMLElement, options: ExportOptions =
 }
 
 export async function exportToSvg(element: HTMLElement, options: ExportOptions = {}): Promise<void> {
-  const { filename = 'snipcode-snippet.svg' } = options;
+  const { filename = 'printcode-snippet.svg' } = options;
 
   try {
     const dataUrl = await htmlToImage.toSvg(element, {

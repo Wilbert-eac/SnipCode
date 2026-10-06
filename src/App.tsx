@@ -131,8 +131,8 @@ export function App() {
       if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 's') {
         e.preventDefault();
         if (canvasRef.current) {
-          const cleanName = state.codeSettings.filename ? state.codeSettings.filename.replace(/\.[^/.]+$/, '') : 'snipcode';
-          exportToPng(canvasRef.current, { scale: 2, filename: `${cleanName}-snipcode.png` });
+          const cleanName = state.codeSettings.filename ? state.codeSettings.filename.replace(/\.[^/.]+$/, '') : 'printcode';
+          exportToPng(canvasRef.current, { scale: 2, filename: `${cleanName}-printcode.png` });
         }
         return;
       }

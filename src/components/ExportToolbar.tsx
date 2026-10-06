@@ -39,10 +39,10 @@ export const ExportToolbar: React.FC<ExportToolbarProps> = ({
     if (!canvasRef.current || isDownloading) return;
     setIsDownloading(true);
     try {
-      const cleanName = filename ? filename.replace(/\.[^/.]+$/, '') : 'snipcode';
+      const cleanName = filename ? filename.replace(/\.[^/.]+$/, '') : 'printcode';
       await exportToPng(canvasRef.current, {
         scale,
-        filename: `${cleanName}-snipcode.png`
+        filename: `${cleanName}-printcode.png`
       });
     } catch (err) {
       alert('Error exportando la imagen PNG.');
@@ -56,9 +56,9 @@ export const ExportToolbar: React.FC<ExportToolbarProps> = ({
     if (!canvasRef.current || isDownloading) return;
     setIsDownloading(true);
     try {
-      const cleanName = filename ? filename.replace(/\.[^/.]+$/, '') : 'snipcode';
+      const cleanName = filename ? filename.replace(/\.[^/.]+$/, '') : 'printcode';
       await exportToSvg(canvasRef.current, {
-        filename: `${cleanName}-snipcode.svg`
+        filename: `${cleanName}-printcode.svg`
       });
     } catch (err) {
       alert('Error exportando SVG.');

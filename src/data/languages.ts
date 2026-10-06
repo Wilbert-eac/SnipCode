@@ -38,7 +38,7 @@ export function useCodeSnippet<T>(initialData: T) {
     prismKey: 'javascript',
     defaultFilename: 'server.js',
     sampleCode: `import express from 'express';
-import { generateGradient } from 'snipcode';
+import { generateGradient } from 'printcode';
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -165,7 +165,7 @@ func StreamSnippets(ctx context.Context) <-chan string {
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>SnipCode ✨</title>
+    <title>PrintCode ✨</title>
   </head>
   <body class="bg-gradient-mesh flex min-h-screen items-center justify-center">
     <div class="card p-8 shadow-2xl backdrop-blur-xl">
@@ -202,7 +202,7 @@ SELECT * FROM top_snippets WHERE ranking <= 5;`
     prismKey: 'json',
     defaultFilename: 'package.json',
     sampleCode: `{
-  "name": "snipcode-studio",
+  "name": "printcode-studio",
   "version": "1.0.0",
   "description": "The sleekest code snapshot generator for developers",
   "scripts": {
@@ -210,7 +210,7 @@ SELECT * FROM top_snippets WHERE ranking <= 5;`
     "build": "tsc && vite build"
   },
   "dependencies": {
-    "html-to-image": "^1.11.11",
+    "html-to-image": "^1.11.13",
     "lucide-react": "^0.475.0"
   }
 }`
@@ -224,11 +224,11 @@ SELECT * FROM top_snippets WHERE ranking <= 5;`
     sampleCode: `#!/usr/bin/env bash
 set -euo pipefail
 
-echo "🚀 Deploying SnipCode to Production..."
+echo "🚀 Deploying PrintCode to Production..."
 npm run build
 
 # Sync assets to edge CDN
-aws s3 sync ./dist s3://snipcode-cdn --delete --cache-control "max-age=31536000"
+aws s3 sync ./dist s3://printcode-cdn --delete --cache-control "max-age=31536000"
 
 echo "✨ Deployment successful in 2.3s!"`
   }

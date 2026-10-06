@@ -798,7 +798,7 @@ export const ControlsSidebar: React.FC<ControlsSidebarProps> = ({
                 </div>
 
                 <div className="flex items-center justify-between pt-2 border-t border-white/5">
-                  <span className="text-xs font-medium text-slate-300">Marca de Agua SnipCode</span>
+                  <span className="text-xs font-medium text-slate-300">Marca de Agua PrintCode</span>
                   <button
                     onClick={() =>
                       onChange((prev) => ({
